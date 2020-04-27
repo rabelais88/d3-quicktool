@@ -1,6 +1,6 @@
 {
   "name": "d3-quicktool",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "some pre-written d3 codes for faster development",
   "main": "dist/bundle.min.js",
   "module": "dist/bundle.min.js",
