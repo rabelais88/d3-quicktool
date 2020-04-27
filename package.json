@@ -15,7 +15,6 @@
   "private": false,
   "scripts": {
     "build": "yarn rollup --config",
-    "publish": "yarn build && npm publish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
