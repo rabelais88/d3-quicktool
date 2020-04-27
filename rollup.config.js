@@ -10,7 +10,8 @@ export default {
     },
     {
       file: 'dist/bundle.min.js',
-      format: 'cjs',
+      format: 'umd',
+      name: 'd3-quicktool',
       plugins: [terser()],
     },
   ],
