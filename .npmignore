@@ -1,5 +1,7 @@
 node_modules/
 test/
+.storybook/
+stories/
 yarn.lock
 rollup.config.js
 .gitignore

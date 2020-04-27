@@ -5,7 +5,14 @@ d3 utility functions for faster development
 - [github](https://github.com/rabelais88/d3-quicktool)
 
 ```javascript
-import { trans, ttrans, rgba, shortenText } from 'd3-quicktool';
+import {
+  trans,
+  ttrans,
+  rgba,
+  shortenText,
+  move,
+  moveCustom,
+} from 'd3-quicktool';
 
 const node = d3.select('mynode');
 
@@ -13,6 +20,9 @@ node.attr('transform', trans(x, y, scale));
 node.attr(...ttrans(x, y, scale));
 node.attr('fill', rgba(0, 0, 0, 1));
 node.attr('text', (d) => shortenText(d, 3)); // 'aaaaaa' -> 'aaa...'
+// can't use transition with move, moveCustom function
+node.call(move, x, y, scale);
+node.call(moveCustom, (d) => trans(d.x, d.y));
 
 import { addSvgStyle, addOutlineStyle, setSize, addHitBox } from 'd3-quicktool';
 const svg = d3.create('svg');

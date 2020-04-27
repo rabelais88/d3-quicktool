@@ -1,6 +1,6 @@
 {
   "name": "d3-quicktool",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "some pre-written d3 codes for faster development",
   "main": "dist/bundle.min.js",
   "module": "dist/bundle.min.js",
@@ -14,10 +14,16 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "yarn rollup --config"
+    "build": "yarn rollup --config",
+    "publish": "yarn build && npm publish",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@storybook/html": "^5.3.18",
+    "babel-loader": "^8.1.0",
+    "d3": "^5.16.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
@@ -25,5 +31,6 @@
     "rollup": "^2.7.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-terser": "^5.3.0"
-  }
+  },
+  "dependencies": {}
 }
