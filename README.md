@@ -2,6 +2,8 @@
 
 d3 utility functions for faster development
 
+- [github](https://github.com/rabelais88/d3-quicktool)
+
 ```javascript
 import { trans } from 'd3-quicktool';
 
