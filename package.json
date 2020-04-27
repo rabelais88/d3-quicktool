@@ -2,7 +2,7 @@
   "name": "d3-quicktool",
   "version": "0.1.2",
   "description": "some pre-written d3 codes for faster development",
-  "main": "dist/bundle.js",
+  "main": "dist/bundle.min.js",
   "module": "dist/bundle.min.js",
   "unpkg": "dist/bundle.min.js",
   "jsdelivr": "dist/bundle.min.js",
