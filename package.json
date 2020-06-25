@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@rollup/plugin-babel": "^5.0.4",
     "@storybook/html": "^5.3.18",
     "babel-loader": "^8.1.0",
     "d3": "^5.16.0",
@@ -28,7 +29,6 @@
     "eslint-plugin-import": "^2.20.2",
     "prettier": "^2.0.5",
     "rollup": "^2.7.2",
-    "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-terser": "^5.3.0"
   },
   "dependencies": {}
