@@ -10,9 +10,6 @@
     "type": "git",
     "url": "https://github.com/rabelais88/d3-quicktool"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "author": "sungryeol park(max)",
   "license": "MIT",
   "private": false,
