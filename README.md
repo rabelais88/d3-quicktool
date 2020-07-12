@@ -19,6 +19,7 @@ const node = d3.select('mynode');
 node.attr('transform', trans(x, y, scale));
 node.call(move, (d, el, a) => [d.x, d.y]);
 node.call(move, (d, el, a) => [d.x, d.y, d.scale]);
+node.call(move, () => [10,10]);
 node.attr('fill', rgba(0, 0, 0, 1));
 node.attr('text', (d) => shortenText(d, 3)); // 'aaaaaa' -> 'aaa...'
 // can't use transition with move, moveCustom function
