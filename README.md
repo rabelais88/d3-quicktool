@@ -7,7 +7,7 @@ d3 utility functions for faster development
 ```javascript
 import {
   trans,
-  ttrans,
+  move,
   rgba,
   shortenText,
   move,
@@ -17,11 +17,11 @@ import {
 const node = d3.select('mynode');
 
 node.attr('transform', trans(x, y, scale));
-node.attr(...ttrans(x, y, scale));
+node.call(move, (d, el, a) => [d.x, d.y]);
+node.call(move, (d, el, a) => [d.x, d.y, d.scale]);
 node.attr('fill', rgba(0, 0, 0, 1));
 node.attr('text', (d) => shortenText(d, 3)); // 'aaaaaa' -> 'aaa...'
 // can't use transition with move, moveCustom function
-node.call(move, x, y, scale);
 node.call(moveCustom, (d) => trans(d.x, d.y));
 
 import { addSvgStyle, addOutlineStyle, setSize, addHitBox } from 'd3-quicktool';

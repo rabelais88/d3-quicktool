@@ -1,4 +1,4 @@
-import ttrans from './ttrans';
+import trans from './trans';
 
 /*
   function myMethod(d, i, a) {
@@ -21,7 +21,7 @@ const addHitBox = (
   node
     .append('rect')
     .attr('opacity', 0)
-    .attr(...ttrans(x, y))
+    .attr('transform', trans(x, y))
     .attr('width', _width)
     .attr('height', _height)
     .on('click', clicked)

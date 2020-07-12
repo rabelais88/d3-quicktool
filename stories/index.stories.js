@@ -1,3 +1,5 @@
+/* eslint-disable import/first,import/no-extraneous-dependencies */
+
 export default {
   title: 'd3-quicktool-basics',
 };
@@ -15,7 +17,11 @@ import {
 export const Basics = () => {
   const svg = d3.create('svg');
   svg.call(setSize, 300, 300);
-  svg.call(addOutlineStyle, { color: 'white', className: 'outlined', strokeWidth: '2px' });
+  svg.call(addOutlineStyle, {
+    color: 'white',
+    className: 'outlined',
+    strokeWidth: '2px',
+  });
 
   svg
     .append('rect')
@@ -24,7 +30,7 @@ export const Basics = () => {
   svg
     .append('text')
     .attr('class', 'outlined')
-    .call(move, 30, 50)
+    .call(move, () => [30, 50])
     .text('hello world!');
 
   svg
